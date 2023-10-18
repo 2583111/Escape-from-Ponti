@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
         normalHeartbeatSound.Play();
 
         // Start the audio check coroutine with adjustable intervals
-        StartCoroutine(CheckAudio(1.0f)); // Adjust the interval as needed
+        StartCoroutine(CheckAudio(1.0f)); 
     }
 
     IEnumerator CheckAudio(float interval)
@@ -52,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
                 fasterHeartbeatSound.Stop();
             }
 
-            yield return new WaitForSeconds(interval); // Adjust the interval as needed
+            yield return new WaitForSeconds(interval); 
         }
     }
 
