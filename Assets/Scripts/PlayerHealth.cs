@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
 
     public AudioSource normalHeartbeatSound;
     public AudioSource fasterHeartbeatSound;
+    public AudioSource heavyBreathing;
 
     private bool isPlayingNormalHeartbeat = false;
 
@@ -20,11 +21,11 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetMaxHealth(maxHealth);
         HealthBar.SetHealthBar(currentHealth);
 
-        // Play the normal heartbeat sound on awake
+        // Play the normal heartbeat sound
         normalHeartbeatSound.Play();
 
-        // Start the audio check coroutine with adjustable intervals
-        StartCoroutine(CheckAudio(1.0f)); 
+        // Start the audio check coroutine 
+        StartCoroutine(CheckAudio(1f));
     }
 
     IEnumerator CheckAudio(float interval)
@@ -36,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
                 normalHeartbeatSound.Play();
                 isPlayingNormalHeartbeat = true;
                 fasterHeartbeatSound.Stop();
+                heavyBreathing.Stop();
             }
             else if (currentHealth < 20 && isPlayingNormalHeartbeat)
             {
@@ -46,15 +48,18 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth >= 1 && currentHealth <= 19)
             {
                 fasterHeartbeatSound.Play();
+                heavyBreathing.Play();
             }
             else
             {
                 fasterHeartbeatSound.Stop();
+                heavyBreathing.Stop();
             }
 
             yield return new WaitForSeconds(interval); 
         }
     }
+
 
     public void TakeDamage(int damage)
     {
