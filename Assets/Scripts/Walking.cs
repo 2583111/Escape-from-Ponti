@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Walking : MonoBehaviour
 {
-    public float walkSpeed = 5f;
+    public float walkSpeed;
     public Transform playerOrientation;
     public float gravity;
 
@@ -51,5 +51,11 @@ public class Walking : MonoBehaviour
             Vector3 horizontalVelocity = Vector3.ClampMagnitude(velocity, walkSpeed);
             body.velocity = new Vector3(horizontalVelocity.x, velocity.y, horizontalVelocity.z);
         }
+    }
+
+    // Function to update the walk speed.
+    public void UpdateWalkSpeed(float newWalkSpeed)
+    {
+        walkSpeed = newWalkSpeed;
     }
 }
