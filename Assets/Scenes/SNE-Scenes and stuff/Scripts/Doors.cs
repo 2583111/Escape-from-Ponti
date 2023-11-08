@@ -49,16 +49,27 @@ public class Doors : MonoBehaviour
                     DoorOpens();
                     openText.SetActive(false);
                 }
+                else
+                {
+                    DoorCloses();
+                    openText.SetActive(true);
+                }
             }
-        else
-        {
-            openText.SetActive(true);
+            else
+            {
+                openText.SetActive(true);
             }
         }
         else
         {
             openText.SetActive(false);
         }
+            
+
+
+
+        
+        
         
 
 
