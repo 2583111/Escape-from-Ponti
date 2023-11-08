@@ -12,29 +12,43 @@ public class InventoryView : MonoBehaviour
     public TextMeshProUGUI useItemText;
     public GameObject inventoryViewGO;
     public GameObject descriptionPanel;
-    public GameObject warningPanel; // Renamed to 'warningPanel'
+    public GameObject warningPanel;
     Walking walking;
 
-    public KeyCode openInventoryKey = KeyCode.I; // Key to open/close inventory
-    private KeyCode closeInventoryKey = KeyCode.Escape; // Key to close inventory
+    public KeyCode openInventoryKey = KeyCode.I;
+    private KeyCode closeInventoryKey = KeyCode.Escape;
 
     public List<ItemSlots> slotData;
 
     public static bool warningPanelActive = false;
     private bool showingWarningPanel = false;
 
+    // Flag to track the inventory state
+    public bool isInventoryOpen = false;
+
     private void Start()
     {
         inventoryViewGO.SetActive(false);
         walking = GetComponent<Walking>();
 
-        // Disable the descriptionPanel and clear text when the game starts
         descriptionPanel.SetActive(false);
         itemNameText.ClearMesh();
         itemDescriptionText.ClearMesh();
         dropItemText.ClearMesh();
         useItemText.ClearMesh();
-        warningPanel.SetActive(false); // Renamed to 'warningPanel'
+        warningPanel.SetActive(false);
+    }
+
+    public void OpenInventory()
+    {
+        isInventoryOpen = true;
+        // Additional code to handle opening the inventory
+    }
+
+    public void CloseInventory()
+    {
+        isInventoryOpen = false;
+        // Additional code to handle closing the inventory
     }
 
     private void OnEnable()
@@ -71,26 +85,26 @@ public class InventoryView : MonoBehaviour
         }
         else
         {
-            warningPanelActive = false; // Reset the flag if the panel is no longer active
+            warningPanelActive = false;
         }
     }
 
-    public void ShowWarningPanel() // Renamed the method to 'ShowWarningPanel'
+    public void ShowWarningPanel()
     {
         warningPanel.SetActive(true);
         showingWarningPanel = true;
         StartCoroutine(DisableWarningPanel());
     }
 
-    public void HideWarningPanel() // Added method to hide the warning panel
+    public void HideWarningPanel()
     {
         warningPanel.SetActive(false);
         showingWarningPanel = false;
     }
 
-    private IEnumerator DisableWarningPanel() // Renamed the method to 'DisableWarningPanel'
+    private IEnumerator DisableWarningPanel()
     {
-        yield return new WaitForSeconds(5.0f); // Wait for 2 seconds
+        yield return new WaitForSeconds(5.0f);
         warningPanel.SetActive(false);
     }
 
@@ -125,7 +139,7 @@ public class InventoryView : MonoBehaviour
         }
 
         dropItemText.SetText("Press G to Drop");
-        descriptionPanel.SetActive(true); // Enable descriptionPanel when the slot is not empty
+        descriptionPanel.SetActive(true);
     }
 
     private void Update()
@@ -138,6 +152,7 @@ public class InventoryView : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 walking.enabled = true;
+                CloseInventory(); // Call to close the inventory when 'I' is pressed
             }
             else
             {
@@ -145,6 +160,7 @@ public class InventoryView : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 walking.enabled = false;
+                OpenInventory(); // Call to open the inventory when 'I' is pressed
             }
         }
 
@@ -154,11 +170,11 @@ public class InventoryView : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             walking.enabled = true;
+            CloseInventory(); // Call to close the inventory when 'Escape' is pressed
         }
 
         if (showingWarningPanel && Input.GetKeyDown(KeyCode.E))
         {
-            // If the "E" key is pressed while the warningPanel is shown, hide it.
             HideWarningPanel();
         }
     }

@@ -1115,8 +1115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &168120663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &176518683
 GameObject:
@@ -2105,13 +2105,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238929690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5137067, y: 1.5633683, z: 3.875979}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5137067, y: 0.36336827, z: 3.875979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1872486692}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274728419
 GameObject:
@@ -3483,8 +3483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &475978406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3581,7 +3581,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &499850896
 GameObject:
@@ -4315,8 +4315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &593114109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4413,7 +4413,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &606999005
 GameObject:
@@ -4910,8 +4910,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &647089538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5008,7 +5008,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &680976585
 GameObject:
@@ -5329,7 +5329,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh200264
+  m_Name: pb_Mesh283008
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6164,8 +6164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &857936621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6262,7 +6262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &912739683
 GameObject:
@@ -6717,8 +6717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &930318927
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6815,7 +6815,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &938509074
 GameObject:
@@ -7005,6 +7005,7 @@ MonoBehaviour:
   sensitivityX: 15
   sensitivityY: 15
   playerOrientation: {fileID: 1059036964}
+  inventory: {fileID: 1716944293}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8016,8 +8017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1124008288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8114,7 +8115,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!224 &1135874154 stripped
 RectTransform:
@@ -8931,8 +8932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1533480173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9029,7 +9030,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &1539351623
 GameObject:
@@ -9488,6 +9489,7 @@ MonoBehaviour:
   - {fileID: 1791180512}
   - {fileID: 399031430}
   - {fileID: 229988602}
+  isInventoryOpen: 0
 --- !u!1 &1567706800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9521,8 +9523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1567706802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9619,7 +9621,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1001 &1606983453
 PrefabInstance:
@@ -9759,8 +9761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1621375325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9857,7 +9859,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &1642704871
 GameObject:
@@ -9892,8 +9894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1642704873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9990,7 +9992,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &1661460233
 GameObject:
@@ -10025,8 +10027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1661460235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10123,7 +10125,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!224 &1667797283 stripped
 RectTransform:
@@ -10225,7 +10227,7 @@ GameObject:
   - component: {fileID: 1716944294}
   m_Layer: 5
   m_Name: Inventory
-  m_TagString: Untagged
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10400,8 +10402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1731251862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10498,7 +10500,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1001 &1748845456
 PrefabInstance:
@@ -11663,6 +11665,7 @@ Transform:
   - {fileID: 1835576533}
   - {fileID: 1565187240}
   - {fileID: 1166007547}
+  - {fileID: 238929692}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11804,8 +11807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &1890700430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11902,7 +11905,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1 &1941185190
 GameObject:
@@ -12015,7 +12018,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh200686
+  m_Name: pb_Mesh283454
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12432,8 +12435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!65 &2010973945
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12530,7 +12533,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
 --- !u!1001 &2012388539
 PrefabInstance:
@@ -14003,8 +14006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f1fbaca6f2551419fa63764f346722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: ac1eb0eb7ca4ec54e99bd980e1210fbf, type: 2}
-  inventoryViewScript: {fileID: 1565187246}
+  itemData: {fileID: 0}
+  inventoryViewScript: {fileID: 0}
 --- !u!1 &3261844266441813599
 GameObject:
   m_ObjectHideFlags: 0

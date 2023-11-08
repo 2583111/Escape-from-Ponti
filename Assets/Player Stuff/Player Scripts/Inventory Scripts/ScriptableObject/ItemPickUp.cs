@@ -7,9 +7,11 @@ public class ItemPickUp : MonoBehaviour
     [SerializeField] private ItemData itemData;
     [SerializeField] private InventoryView inventoryViewScript;
 
+    private bool canPickUp = true;
+
     private void OnTriggerStay(Collider other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!other.CompareTag("Player") || !canPickUp) return;
 
         if (InventoryView.warningPanelActive)
         {
@@ -17,7 +19,7 @@ public class ItemPickUp : MonoBehaviour
             Debug.Log("Slot is full. Cannot pick up the item.");
             inventoryViewScript.ShowWarningPanel();
         }
-        else if (Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E) && !inventoryViewScript.isInventoryOpen)
         {
             if (inventoryViewScript != null)
             {
@@ -25,5 +27,12 @@ public class ItemPickUp : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+
+        canPickUp = true;
     }
 }
