@@ -5,13 +5,10 @@ using UnityEngine;
 public class StateMachine : MonoBehaviour
 {
     public BaseState activeState;
-    public PatrolState patrolState;
 
-    public void Initialize() 
-    { 
-       //setup default state.
-       patrolState = new PatrolState();
-        ChangeState(patrolState);
+    public void Initialize()
+    {
+        ChangeState(new PatrolState());
     }
     void Start()
     {
@@ -27,9 +24,9 @@ public class StateMachine : MonoBehaviour
         }
     }
 
-    public void ChangeState(BaseState newState) 
-    { 
-    
+    public void ChangeState(BaseState newState)
+    {
+
         if (activeState != null)
         {
             activeState.Exit();

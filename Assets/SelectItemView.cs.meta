@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/SelectItemView.cs.meta
 guid: 783e2caed1165c2488f3bd4fdcb36725
+=======
+guid: 8234026f4dfc06341bc8c28fa1e8a21f
+>>>>>>> Stashed changes:Assets/Scripts/Player/DamageTester.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
