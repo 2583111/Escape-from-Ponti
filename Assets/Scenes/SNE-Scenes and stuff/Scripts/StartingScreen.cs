@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class StartingScreen : MonoBehaviour
 {
     //private GameObject player;
     public GameObject startingScreen;
+    public Canvas gameCredits;
 
     public float waitTime;
 
@@ -16,6 +18,7 @@ public class StartingScreen : MonoBehaviour
         startingScreen.SetActive(true);
         //player = GameObject.FindWithTag("Player");
         //player.GetComponent<FirstPersonController>().enabled = false;
+        gameCredits.enabled = false;
 
         StartCoroutine(Starting());
     }
@@ -27,12 +30,12 @@ public class StartingScreen : MonoBehaviour
       //  player.GetComponent<FirstPersonController>().enabled = true;
 
     }
-
-
-
-
-    void Update()
+    void ShowGameCredits()
     {
-        
+        gameCredits.enabled = true;
     }
+
+
+
+   
 }
