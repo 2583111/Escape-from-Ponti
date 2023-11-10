@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SNE-Scenes and stuff/StartScreen.unity
     guid: 2228813fce3a7634199a030a43450a7a
+  - enabled: 1
+    path: Assets/Scenes/SNE-Scenes and stuff/GAMEOVERSCREEN.unity
+    guid: 0e4bf5c3045c73145b048cb947e2bd61
   m_configObjects: {}
