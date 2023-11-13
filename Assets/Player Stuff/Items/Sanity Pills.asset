@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d2d242309f31f4fbf15e2491faa02c, type: 3}
+  m_Name: Sanity Pills
+  m_EditorClassIdentifier: 
+  itemName: Sanity Pills
+  itemDescription: 
+  itemSprite: {fileID: 5434461130759419643, guid: 91536ceb5d69ea049a92a11e7ccec2c8, type: 3}
+  dropItem: 
+  itemCategory: 1
+  specificItem: 1
+  itemPrefab: {fileID: 9151769111747043697, guid: 37cc1069af2ebbd4c8e7363ba83ff95a, type: 3}

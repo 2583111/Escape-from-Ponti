@@ -8,42 +8,71 @@ using TMPro;
 
 public class ItemSlots : MonoBehaviour, ISelectHandler
 {
-    public ItemData itemData;
+     public ItemData itemData;
 
     private InventoryView viewController;
     private Image displaySprite;
 
-
-    void ISelectHandler.OnSelect(BaseEventData eventData)
+    public void OnSelect(BaseEventData eventData)
     {
         viewController.OnSlotSelected(this);
     }
-
 
     private void OnEnable()
     {
         viewController = FindObjectOfType<InventoryView>();
 
-        if (itemData == null)
+        if (itemData != null)
         {
-            return;
+            DisplayItemSprite();
         }
-
-        displaySprite = Instantiate<Image>(itemData.itemSprite, transform.position, Quaternion.identity, transform);
     }
 
     private void OnDisable()
     {
-        if (displaySprite != null)
-        {
-            Destroy(displaySprite);
-        }
+        ClearDisplaySprite();
     }
-
 
     public bool IsEmpty()
     {
         return itemData == null;
     }
 
+    public void UseItem()
+    {
+        if (!IsEmpty())
+        {
+            // Implement the logic for using the item here
+
+            // Clear the item from the slot immediately after use
+            ClearSlot();
+        }
+        else
+        {
+            Debug.LogWarning("Selected item slot is empty.");
+        }
+    }
+
+    private void DisplayItemSprite()
+    {
+        if (displaySprite == null && itemData.itemSprite != null)
+        {
+            displaySprite = Instantiate(itemData.itemSprite, transform.position, Quaternion.identity, transform);
+        }
+    }
+
+    private void ClearDisplaySprite()
+    {
+        if (displaySprite != null)
+        {
+            Destroy(displaySprite.gameObject);
+            displaySprite = null;
+        }
+    }
+
+    public void ClearSlot()
+    {
+        ClearDisplaySprite();
+        itemData = null;
+    }
 }

@@ -8,18 +8,24 @@ public class EventBus : MonoBehaviour
     public static EventBus Instance { get; private set; }
 
     public event Action<ItemData> onPickUpItem;
+    public event Action<ItemData> onItemUsed;
 
     public void PickUpItem(ItemData itemData)
     {
         onPickUpItem?.Invoke(itemData);
     }
-
+    internal void UseItem(ItemData item)
+    {
+        onItemUsed?.Invoke(item);
+    }
+   
+    
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // This ensures the object persists across scenes.
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
