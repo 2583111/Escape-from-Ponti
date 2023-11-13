@@ -11,12 +11,27 @@ public class ItemData : ScriptableObject
     public Image itemSprite;
     public string dropItem;
     public ItemCategory itemCategory;
+    public SpecificItem specificItem;
+    public GameObject itemPrefab;
 
     public enum ItemCategory
     {
         KeyItem,
         Consumable,
         Flashlight,
+    }
+
+    public enum SpecificItem
+    {
+        Medkit,
+        SmallMedkit,
+        LargeMedkit,
+        SanityPills,
+        Battery,
+        Boosts,
+        Ammo,
+        Null,
+        
     }
 
 }

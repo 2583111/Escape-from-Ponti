@@ -67,7 +67,7 @@ public class PlayerHealth : MonoBehaviour
         if (heavyBreathingCoroutine == null)
         {
             heavyBreathing.Play();
-            heavyBreathingCoroutine = StartCoroutine(StopHeavyBreathingAfter(20.0f)); // Adjust the heavy breathing duration as needed
+            heavyBreathingCoroutine = StartCoroutine(StopHeavyBreathingAfter(20.0f));
         }
     }
 
@@ -95,6 +95,33 @@ public class PlayerHealth : MonoBehaviour
         if (targetHealth < currentHealth)
         {
             StartCoroutine(DecreaseHealthSmoothly(targetHealth));
+        }
+    }
+
+    public void Heal(int healingAmount)
+    {
+        if (currentHealth >= maxHealth)
+        {
+            Debug.Log("Player is already at max health.");
+            return;
+        }
+
+        currentHealth = Mathf.Min(currentHealth + healingAmount, maxHealth);
+
+        HealthBar.SetHealthBar(currentHealth);
+
+        Debug.Log($"Player healed by: {healingAmount}. Current health: {currentHealth}");
+    }
+
+
+
+    IEnumerator IncreaseHealthSmoothly(int targetHealth)
+    {
+        while (currentHealth < targetHealth)
+        {
+            currentHealth = (int)Mathf.MoveTowards(currentHealth, targetHealth, healthDecreaseSpeed * Time.deltaTime);
+            HealthBar.SetHealthBar(currentHealth);
+            yield return null;
         }
     }
 

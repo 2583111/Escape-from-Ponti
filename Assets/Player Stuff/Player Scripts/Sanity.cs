@@ -107,6 +107,13 @@ public class Sanity : MonoBehaviour
         sanityBar.value = Mathf.Max(sanityBar.value, 0);
     }
 
+    public void IncreaseSanity(int amount)
+    {
+        sanityBar.value += amount;
+        sanityBar.value = Mathf.Min(sanityBar.value, maxSanity);
+
+    }
+
     private void PlayAudio(AudioSource audioSource)
     {
         audioSource.Play();

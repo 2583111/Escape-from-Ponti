@@ -4,55 +4,39 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float sensitivityX;
-    public float sensitivityY;
-    public Transform playerOrientation;
+    public float sensitivityX = 2f; // Sensitivity for horizontal mouse movement
+    public float sensitivityY = 2f; // Sensitivity for vertical mouse movement
 
-    private float rotationX;
-    private float rotationY;
+    public Transform playerOrientation; // Reference to the player's orientation
 
-    public GameObject inventory; // Reference to the Inventory game object
+    private float rotationX; // Stores the rotation around the X-axis
+    private float rotationY; // Stores the rotation around the Y-axis
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
+        // Lock and hide the cursor at the beginning of the game
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        // Find the Inventory game object by its tag
-        inventory = GameObject.FindGameObjectWithTag("Inventory");
-
-        if (inventory == null)
-        {
-            Debug.LogWarning("Inventory game object not found!");
-        }
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        // Check if the Inventory game object is active (enabled)
-        bool isInventoryActive = inventory != null && inventory.activeSelf;
-
-        // Adjust sensitivity based on the Inventory state
-        if (isInventoryActive)
-        {
-            sensitivityX = 0f; // Set to 0 when Inventory is active
-            sensitivityY = 0f; // Set to 0 when Inventory is active
-        }
-        else
-        {
-            sensitivityX = 2f; // Set to the normal value when Inventory is not active
-            sensitivityY = 2f; // Set to the normal value when Inventory is not active
-        }
-
+        // Get the mouse inputs
         float mouseX = Input.GetAxis("Mouse X") * sensitivityX;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivityY;
 
-        rotationX -= mouseY;
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
-        rotationY += mouseX;
+        // Update the rotation values
+        rotationX -= mouseY; // Invert the mouseY input to match the usual camera controls
+        rotationX = Mathf.Clamp(rotationX, -90f, 90f); // Clamp the vertical rotation to avoid looking upside down
 
+        rotationY += mouseX; // Horizontal rotation
+
+        // Rotate the camera and player orientation
         transform.rotation = Quaternion.Euler(rotationX, rotationY, 0f);
         playerOrientation.rotation = Quaternion.Euler(0f, rotationY, 0f);
     }
 }
+
 

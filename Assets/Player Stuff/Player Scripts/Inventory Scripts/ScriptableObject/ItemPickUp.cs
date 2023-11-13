@@ -24,7 +24,7 @@ public class ItemPickUp : MonoBehaviour
             if (inventoryViewScript != null)
             {
                 EventBus.Instance.PickUpItem(itemData);
-                Destroy(gameObject);
+                gameObject.SetActive(false); // Disable the GameObject
             }
         }
     }

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d2d242309f31f4fbf15e2491faa02c, type: 3}
+  m_Name: Syringe
+  m_EditorClassIdentifier: 
+  itemName: DIrty Needle
+  itemDescription: 
+  itemSprite: {fileID: 3655685061125334788, guid: 8a5b6b88b4c68de44882cb059e2cd8d8, type: 3}
+  dropItem: 
+  itemCategory: 1
+  specificItem: 3
+  itemPrefab: {fileID: 8215638061838652986, guid: 9eed96909e99fee428088284467b62f4, type: 3}

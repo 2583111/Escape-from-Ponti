@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d2d242309f31f4fbf15e2491faa02c, type: 3}
+  m_Name: First Aid
+  m_EditorClassIdentifier: 
+  itemName: First Aid Kit
+  itemDescription: Use If You Are Hurt
+  itemSprite: {fileID: 7925306082185717445, guid: ee2b600ebab6e1d47b0adb2e6958095c, type: 3}
+  dropItem: 
+  itemCategory: 1
+  itemPrefab: {fileID: 6568856561979590394, guid: 9b09bf28a5019d74fa50bb59bd9d8162, type: 3}
