@@ -8,6 +8,8 @@ public class Zombie : MonoBehaviour
     private StateMachine stateMachine;
     private NavMeshAgent agent;
 
+    public int health = 100;
+
     public NavMeshAgent Agent { get => agent; }
 
 
@@ -23,6 +25,9 @@ public class Zombie : MonoBehaviour
     public float eyeHeight;
 
     public float sphereCastRadius = 1f;
+
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -76,5 +81,16 @@ public class Zombie : MonoBehaviour
         return false;
     }
 
-}
 
+    public void TakeDamage(int damageAmount)
+    {
+        health -= damageAmount;
+        
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
+}
