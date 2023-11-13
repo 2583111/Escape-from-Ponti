@@ -1102,6 +1102,7 @@ MonoBehaviour:
   sensitivityX: 15
   sensitivityY: 15
   playerOrientation: {fileID: 2572314916600726955}
+  inventory: {fileID: 0}
 --- !u!1 &2157198615343261480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2482,6 @@ GameObject:
   - component: {fileID: 3472360984521706243}
   - component: {fileID: 7992140164848175693}
   - component: {fileID: 8216000234177727102}
-  - component: {fileID: 7543787296861487082}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: Player
@@ -2650,26 +2650,8 @@ MonoBehaviour:
   flashLight: {fileID: 5774310035547988805}
   turnOn: {fileID: 674594051290999438}
   turnOff: {fileID: 674594051290999438}
+  batterylife: 100
   flashlightKey: 102
---- !u!114 &7543787296861487082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5758318401268867953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf67f79a32ca92479a117575c0d674a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  HealthBar: {fileID: 929259237017467081}
-  healthDecreaseSpeed: 5
-  normalHeartbeatSound: {fileID: 3334637813577488226}
-  fasterHeartbeatSound: {fileID: 324940253520016157}
-  heavyBreathing: {fileID: 0}
 --- !u!1 &5774310035547988805
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,6 +3527,7 @@ GameObject:
   - component: {fileID: 1719083623849701890}
   - component: {fileID: 2721592450884748413}
   - component: {fileID: 6197708165899175645}
+  - component: {fileID: 9083578160091789243}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -3621,6 +3604,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9083578160091789243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8191702051614260546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6767475c5b87a648b7f228eafaf9494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5154860799059385000}
+  shootForce: 10
+  playerTransform: {fileID: 172300167475259775}
+  playerCam: {fileID: 6010718205100395015}
 --- !u!1 &8428966978511006662
 GameObject:
   m_ObjectHideFlags: 0

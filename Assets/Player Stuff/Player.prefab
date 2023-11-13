@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5963609432277370580}
   - component: {fileID: 7563787512205770761}
   - component: {fileID: 7175040782456104421}
+  - component: {fileID: 2610994522328868040}
   m_Layer: 0
   m_Name: Bullet6
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2610994522328868040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176171547651679605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99287fc745ec5c6478f8fa811f705622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &616050701780340058
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +691,7 @@ GameObject:
   - component: {fileID: 8555280410793235318}
   - component: {fileID: 8792798443112163790}
   - component: {fileID: 1381144390962097549}
+  - component: {fileID: 692170107999148500}
   m_Layer: 0
   m_Name: Bullet3
   m_TagString: Untagged
@@ -749,6 +764,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &692170107999148500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878794003127583376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99287fc745ec5c6478f8fa811f705622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &4183653407908215301
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +788,7 @@ GameObject:
   - component: {fileID: 282972475543895285}
   - component: {fileID: 2819307665935420492}
   - component: {fileID: 8836749325843995623}
+  - component: {fileID: 2590552460675671981}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -832,6 +861,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2590552460675671981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4183653407908215301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99287fc745ec5c6478f8fa811f705622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &4347175753797042131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1063,7 @@ GameObject:
   - component: {fileID: 1964957771902086867}
   - component: {fileID: 5894630787197608992}
   - component: {fileID: 1280497748629708063}
+  - component: {fileID: 1966848405866096737}
   m_Layer: 0
   m_Name: Bullet2
   m_TagString: Untagged
@@ -1093,6 +1136,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1966848405866096737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368566644326999531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99287fc745ec5c6478f8fa811f705622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &5691202787751602248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1160,7 @@ GameObject:
   - component: {fileID: 966928501068842980}
   - component: {fileID: 1889610450748105837}
   - component: {fileID: 5757909603373732409}
+  - component: {fileID: 7093857656324877088}
   m_Layer: 0
   m_Name: Bullet5
   m_TagString: Untagged
@@ -1176,6 +1233,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7093857656324877088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691202787751602248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99287fc745ec5c6478f8fa811f705622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &5891087131955447373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,8 +4691,8 @@ GameObject:
   - component: {fileID: 5892006223055922295}
   - component: {fileID: 5892006223055922290}
   - component: {fileID: 5892006223055922288}
-  - component: {fileID: 5892006223055922294}
   - component: {fileID: 5892006223055922293}
+  - component: {fileID: 3336191732214707900}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: Player
@@ -4793,25 +4863,6 @@ MonoBehaviour:
   turnOff: {fileID: 5892006222517215595}
   batterylife: 100
   flashlightKey: 102
---- !u!114 &5892006223055922294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5892006223055922300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf67f79a32ca92479a117575c0d674a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  HealthBar: {fileID: 5892006223755958899}
-  healthDecreaseSpeed: 5
-  normalHeartbeatSound: {fileID: 5892006222084331344}
-  fasterHeartbeatSound: {fileID: 5892006222392615269}
-  heavyBreathing: {fileID: 5892006222152049463}
 --- !u!114 &5892006223055922293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4846,6 +4897,25 @@ MonoBehaviour:
   - {fileID: 5900917276060304278}
   - {fileID: 5900917276898454561}
   isInventoryOpen: 0
+--- !u!114 &3336191732214707900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5892006223055922300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b341b86825e517045af1ee3a1454f65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  HealthBar: {fileID: 5892006223755958899}
+  healthDecreaseSpeed: 5
+  normalHeartbeatSound: {fileID: 5892006222084331344}
+  fasterHeartbeatSound: {fileID: 5892006222392615269}
+  heavyBreathing: {fileID: 5892006222152049463}
 --- !u!1 &5892006223081495708
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,7 +5335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5892006223398072047}
   - component: {fileID: 5892006223398072046}
-  - component: {fileID: 5892006223398072045}
+  - component: {fileID: 2509402467970939330}
   m_Layer: 5
   m_Name: SanityBar
   m_TagString: Untagged
@@ -5348,7 +5418,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5892006223398072045
+--- !u!114 &2509402467970939330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5357,7 +5427,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5892006223398072040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37787976b00edf947a1949b4712b3501, type: 3}
+  m_Script: {fileID: 11500000, guid: 3286f4a04691c6844adb899d4c4b872c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sanityBar: {fileID: 5892006223398072046}
@@ -6171,6 +6241,7 @@ GameObject:
   - component: {fileID: 6918314676615607166}
   - component: {fileID: 6317724674663152859}
   - component: {fileID: 8091251469100288017}
+  - component: {fileID: 3464849231357412355}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -6247,6 +6318,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3464849231357412355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7730738993162824132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6767475c5b87a648b7f228eafaf9494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4183653407908215301}
+  shootForce: 10
+  playerTransform: {fileID: 5892006223287589375}
+  playerCam: {fileID: 5892006221718260193}
 --- !u!1 &8236375463531042255
 GameObject:
   m_ObjectHideFlags: 0
@@ -6258,6 +6345,7 @@ GameObject:
   - component: {fileID: 4914929638718426452}
   - component: {fileID: 8775238041336646718}
   - component: {fileID: 2879791127949121956}
+  - component: {fileID: 7770279830455472786}
   m_Layer: 0
   m_Name: Bullet4
   m_TagString: Untagged
@@ -6330,6 +6418,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7770279830455472786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236375463531042255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99287fc745ec5c6478f8fa811f705622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
 --- !u!1 &8971445769471121028
 GameObject:
   m_ObjectHideFlags: 0
