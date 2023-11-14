@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d2d242309f31f4fbf15e2491faa02c, type: 3}
+  m_Name: Ammo
+  m_EditorClassIdentifier: 
+  itemName: Revolver Ammo
+  itemDescription: 
+  itemSprite: {fileID: 269034275911420459, guid: 49ac7ac82f704024f95dcf9f07b587ce, type: 3}
+  dropItem: 
+  itemCategory: 1
+  specificItem: 6
+  itemPrefab: {fileID: 5366306513359506693, guid: fc7360453202ed244b517547683716ac, type: 3}

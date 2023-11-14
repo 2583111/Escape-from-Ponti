@@ -29,6 +29,15 @@ public class Sanity : MonoBehaviour
     private bool whispersAudioPlayed = false;
     private float whispersVolume = 0.0f;
 
+    // New property to access the current sanity value
+    private float _currentSanity;
+
+    public float currentSanity
+    {
+        get { return _currentSanity; }
+        set { _currentSanity = Mathf.Clamp(value, 0, maxSanity); }
+    }
+
     private void Start()
     {
         InitializeSanity();
@@ -41,6 +50,7 @@ public class Sanity : MonoBehaviour
     {
         sanityBar.maxValue = maxSanity;
         sanityBar.value = maxSanity;
+        currentSanity = maxSanity;
     }
 
     private void InitializePostProcessingEffects()
@@ -56,7 +66,7 @@ public class Sanity : MonoBehaviour
         while (true)
         {
             DecreaseSanity(decreaseRate);
-            float currentSanityPercent = sanityBar.value / maxSanity;
+            float currentSanityPercent = currentSanity / maxSanity;
 
             if (currentSanityPercent <= 0.25f)
             {
@@ -67,7 +77,7 @@ public class Sanity : MonoBehaviour
 
                     if (walkSpeed != null)
                     {
-                        walkSpeed.UpdateWalkSpeed(5f); //Assign the walk speed when sanity is > 25
+                        walkSpeed.UpdateWalkSpeed(5f); // Assign the walk speed when sanity is > 25
                     }
                 }
             }
@@ -101,17 +111,19 @@ public class Sanity : MonoBehaviour
         }
     }
 
+    // Updated method to use the currentSanity property
     private void DecreaseSanity(float amount)
     {
-        sanityBar.value -= amount;
-        sanityBar.value = Mathf.Max(sanityBar.value, 0);
+        currentSanity -= amount;
+        currentSanity = Mathf.Max(currentSanity, 0);
+        sanityBar.value = currentSanity; // Update the UI slider value
     }
 
     public void IncreaseSanity(int amount)
     {
-        sanityBar.value += amount;
-        sanityBar.value = Mathf.Min(sanityBar.value, maxSanity);
-
+        currentSanity += amount;
+        currentSanity = Mathf.Min(currentSanity, maxSanity);
+        sanityBar.value = currentSanity; // Update the UI slider value
     }
 
     private void PlayAudio(AudioSource audioSource)
