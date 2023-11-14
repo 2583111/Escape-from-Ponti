@@ -69,7 +69,7 @@ NavMeshProjectSettings:
     cost: 1
   - name: 
     cost: 1
-  m_LastAgentTypeID: 1479372276
+  m_LastAgentTypeID: -1923039037
   m_Settings:
   - serializedVersion: 2
     agentTypeID: 0
@@ -91,7 +91,7 @@ NavMeshProjectSettings:
       m_Flags: 0
   - serializedVersion: 2
     agentTypeID: -1372625422
-    agentRadius: 2.03
+    agentRadius: 2.31
     agentHeight: 2.05
     agentSlope: 24.6
     agentClimb: 0.66
