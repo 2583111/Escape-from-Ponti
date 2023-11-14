@@ -13,13 +13,11 @@ public class DialogueManager : MonoBehaviour
     [Header("Code Fields")]
     [SerializeField] TextMeshProUGUI nameText; //Name
     [SerializeField] TextMeshProUGUI dialogueText; //Text in dialogue box
-    [SerializeField] Image dialogueImage; //Image
     Queue<string> sentences; //Sentences
     PlayerCamera playerCamera;
 
     [Header("NPC Dialogue")]
     public string NPCname; //Name
-    public Image NPCimage; //Image
     [TextArea(4, 10)] public string[] NPCsentences; //Sentences
     
 
@@ -61,7 +59,6 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Convo with " + NPCname);
 
         nameText.text = NPCname;
-        dialogueImage.sprite = NPCimage.sprite;
 
         sentences.Clear();
 
@@ -71,6 +68,13 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
+    }
+    private void FixedUpdate()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
     }
 
     public void DisplayNextSentence()
