@@ -17,5 +17,5 @@ MonoBehaviour:
   itemSprite: {fileID: 3655685061125334788, guid: 8a5b6b88b4c68de44882cb059e2cd8d8, type: 3}
   dropItem: 
   itemCategory: 1
-  specificItem: 3
+  specificItem: 5
   itemPrefab: {fileID: 8215638061838652986, guid: 9eed96909e99fee428088284467b62f4, type: 3}
