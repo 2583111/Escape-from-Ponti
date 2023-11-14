@@ -217,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &106384934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +231,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingScreen: {fileID: 1864340305}
+  startingScreenTime: 3
+  startingScreenClip: {fileID: 0}
+  gamecreditsClip: {fileID: 0}
+  gameCredits: {fileID: 0}
   waitTime: 3
 --- !u!4 &106384935
 Transform:

@@ -7,24 +7,32 @@ public class MainMenu : MonoBehaviour
 {
    public void Play()
     {
-        SceneManager.LoadScene("SoundsandLighting");
+        SceneManager.LoadScene("Level");
     }
-
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene("Level");
+    }
    
-    public void Credits()
+    public void WinningScreen()
     {
-        SceneManager.LoadScene("Credits");
-
+        SceneManager.LoadScene("WinningScreen");
     }
-    public void Guidelines()
+   
+    public void GameOver()
     {
-        SceneManager.LoadScene("Guidelines");
+        SceneManager.LoadScene("GameOver");
     }
-
     public void Quit()
     {
         Application.Quit();
         Debug.Log("Player has quit the game");
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("StartScreen");
+        
     }
     
 }

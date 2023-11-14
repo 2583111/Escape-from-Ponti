@@ -524,7 +524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: -362}
+  m_AnchoredPosition: {x: -100, y: -429}
   m_SizeDelta: {x: 711.5083, y: 134.4545}
   m_Pivot: {x: 0.52105635, y: 0.5}
 --- !u!114 &1293190499
@@ -684,13 +684,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1909371836}
-        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
-        m_MethodName: RestartGame
+      - m_Target: {fileID: 1655050666}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -752,7 +752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46, y: -177}
+  m_AnchoredPosition: {x: -92, y: -272}
   m_SizeDelta: {x: 711.5083, y: 134.4545}
   m_Pivot: {x: 0.52105635, y: 0.5}
 --- !u!1 &1672990229
@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 1835621711}
   - component: {fileID: 1835621710}
   m_Layer: 5
-  m_Name: GameOverScrreen
+  m_Name: GameOver Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
